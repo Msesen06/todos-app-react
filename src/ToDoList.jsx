@@ -114,7 +114,7 @@ const permanentlyDeleteTask = (id) => {
             total={totalTasks}
             completed={completedTasks}
         />
-         {tasks.length > 0 && <h2>Yapılacak Görevler</h2> || <h2>Hiç görev yok, ekleyin!</h2>}
+         {(tasks.length > 0) && <h2>Yapılacak Görevler</h2> || <h2>Hiç görev yok, ekleyin!</h2>}
          <div style={{ maxWidth: "600px", margin: "40px auto" }}>
       {filteredTasks.map((task) => (
         <TodoCard
