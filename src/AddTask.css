@@ -1,20 +1,18 @@
 .add-task {
     display: flex;
-    align-items: center;
     gap: 12px;
     background: #ffffff;
     padding: 14px;
     border-radius: 16px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     margin-bottom: 24px;
+    box-sizing: border-box;
 }
 
 /* Inputs */
-.add-task input[type="text"],
-.add-task input[type="date"] {
-    flex: 1;
-    min-width: 0;
-    /* taşma fix */
+.add-task input {
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px 14px;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -26,7 +24,6 @@
     width: 44px;
     height: 44px;
     min-width: 44px;
-    /* küçülmeyi engeller */
     border-radius: 50%;
     border: none;
     background: linear-gradient(135deg, #4c6ef5, #364fc7);
@@ -37,29 +34,25 @@
     align-items: center;
     justify-content: center;
 }
-.add-btn:hover {
-    opacity: 0.9;
-}
+
 .add-btn:disabled {
     background: #a5b4fc;
     cursor: not-allowed;
 }
 
-/* 🔽 MOBİL */
+/* 📱 MOBİL */
 @media (max-width: 520px) {
     .add-task {
         flex-direction: column;
-        align-items: stretch;
     }
 
-    .add-task input[type="text"],
-    .add-task input[type="date"] {
-        width: 100%;
+    .add-task input {
         font-size: 16px;
-        padding: 14px 18px;
-        
+        padding: 14px;
+    }
 
-        
+    .add-task input[type="date"] {
+        height: 48px;
     }
 
     .add-btn {
