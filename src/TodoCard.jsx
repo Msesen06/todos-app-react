@@ -1,4 +1,4 @@
-import { FaTrash, FaEdit, FaCheck } from "react-icons/fa";
+import { FaTrash, FaEdit } from "react-icons/fa";
 import { FaRegCircle, FaCheckCircle } from "react-icons/fa";
 import "./TodoCard.css";
 
