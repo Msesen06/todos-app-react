@@ -1,0 +1,41 @@
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 10px 12px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.search-wrapper input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #111827;
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-wrapper input::placeholder {
+    color: #9ca3af;
+}
+
+.search-icon {
+    color: #6b7280;
+}
+
+/* 🔽 TABLET & MOBİL */
+
+@media (max-width: 520px) {
+    .search-wrapper {
+        max-width: 100%;
+    }
+   
+    .search-icon + input {
+        text-align: center;
+    }
+}

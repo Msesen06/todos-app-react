@@ -1,0 +1,94 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.25s ease;
+}
+
+.modal {
+    background: white;
+    padding: 24px;
+    border-radius: 18px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+}
+
+.modal h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    color: #333;
+}
+
+.modal input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.modal input:focus {
+    outline: none;
+    border-color: #4c6ef5;
+    box-shadow: 0 0 0 3px rgba(76, 110, 245, 0.15);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.modal-actions button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cancel {
+    background: #f1f3f5;
+    color: #333;
+}
+
+.save {
+    background: linear-gradient(135deg, #4c6ef5, #364fc7);
+    color: white;
+}
+
+.cancel:hover {
+    background: #e9ecef;
+}
+
+.save:hover {
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
