@@ -1,4 +1,5 @@
 import { FaTrash, FaEdit, FaCheck } from "react-icons/fa";
+import { FaRegCircle, FaCheckCircle } from "react-icons/fa";
 import "./TodoCard.css";
 
 function TodoCard({ todo, onDelete, onEdit, onToggle }) {
@@ -17,7 +18,7 @@ function TodoCard({ todo, onDelete, onEdit, onToggle }) {
           onClick={() => onToggle(todo.id)}
           title="Tamamla"
         >
-          <FaCheck />
+          {todo.completed ? <FaCheckCircle /> : <FaRegCircle />}
         </button>
 
         <button

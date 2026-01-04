@@ -36,6 +36,7 @@ function AddTask({ onAdd }) {
 
       <input
         type="date"
+        placeholder="Tarih gir..."
         value={date}
         onChange={(e) => setDate(e.target.value)}
       />
