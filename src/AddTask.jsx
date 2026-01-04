@@ -33,7 +33,7 @@ function AddTask({ onAdd }) {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-
+      
       <input
         type="date"
         placeholder="Tarih gir..."
