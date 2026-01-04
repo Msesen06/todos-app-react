@@ -53,6 +53,7 @@
 
     .add-task input[type="date"] {
         height: 48px;
+        padding: 3px 14px;
     }
 
     .add-btn {
